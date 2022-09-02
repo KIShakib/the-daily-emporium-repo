@@ -18,6 +18,9 @@
       rel="stylesheet"
     />
 
+    <!-- FontAwesone -->
+    <script src="https://kit.fontawesome.com/16d08d23a3.js" crossorigin="anonymous"></script>
+
     <!-- Bootstrap CSS CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -31,43 +34,44 @@
     <header class="container mt-3">
       <!-- Navbar Section Start -->
       <!-- <div class="container"> -->
-        <nav class="navbar bg-light rounded">
-          <div class="container-fluid">
-            <div>
-              <h3 class="nav-heading">The Daily Emporium</h3>
-            </div>
-
-            <div>
-              <a class="navbar-link" href="">News</a>
-              <a class="navbar-link" href="">Blog</a>
-              <img class="navbar-img" src="./img/bg1.png" alt="" />
-            </div>
+      <nav class="navbar bg-light rounded">
+        <div class="container-fluid">
+          <div>
+            <h3 class="nav-heading">The Daily Emporium</h3>
           </div>
-        </nav>
+
+          <div>
+            <a class="navbar-link" href="">News</a>
+            <a class="navbar-link" href="">Blog</a>
+            <img class="navbar-img" src="./img/bg1.png" alt="" />
+          </div>
+        </div>
+      </nav>
       <!-- </div> -->
 
       <div>
-        <hr class="navbar-hr">
+        <hr class="navbar-hr" />
       </div>
       <!-- Navbar Section End -->
     </header>
 
     <main class="container">
+      <!-- Categores Section Start -->
+      <div>
+        <ul
+          id="categories-ul"
+          class="d-flex justify-content-evenly rounded"
+        ></ul>
+      </div>
+      <!-- Categores Section End -->
 
-        <!-- Categores Section Start -->
-        <div>
-            <ul id="categories-ul" class="d-flex justify-content-evenly rounded">
+      <!-- New Card Section Start -->
 
-            </ul>
-        </div>
-        <!-- Categores Section End -->
+      <div id="card-container" class="container row row-cols-1 row-cols-md-1 row-cols-lg-2 row-cols-sm-1 g-4">
 
-        <!-- New Card Section Start -->
+      </div>
 
-        
-
-        <!-- New Card Section End -->
-
+      <!-- New Card Section End -->
     </main>
 
     <!-- Bootstrap JS CDN -->
