@@ -1,3 +1,37 @@
-.heading{
-    color: tomato;
+/* font-family: 'Advent Pro', sans-serif;
+font-family: 'Khand', sans-serif;
+font-family: 'Saira Condensed', sans-serif;
+font-family: 'Staatliches', cursive; */
+.body{
+    background-color: #adb5bd;
+}
+.nav-heading{
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #1BA098;
+}
+.navbar-img{
+    width: 50px;
+}
+.navbar-link{
+    text-decoration: none;
+    margin: 0 20px;
+    color: #1BA098;
+    font-weight: 700;
+}
+.navbar-hr{
+    border-top: 5px solid black;
+}
+#categories-ul{
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+#categories-ul li{
+    list-style: none;
+}
+#categories-ul li>button{
+    color: #1BA098;
+    font-weight: 500;
+    font-size: 1.2em;
 }
