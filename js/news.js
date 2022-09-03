@@ -81,9 +81,9 @@ const displayNews = (categoriesNewsData, categoryName) =>{
         newsCardContainer.classList.add('col');
 
         newsCardContainer.innerHTML = `
-        <div class="card h-100 d-flex flex-row p-2">
+        <div class="card h-100 d-flex flex-lg-row flex-md-column flex-sm-column p-2">
         <img src="${newsData.image_url ? newsData.image_url : "No Image Found"}"
-        class="card-img-top w-50 h-75 my-auto" alt="img" />
+        class="card-img-top w-50 h-75 my-auto mx-auto" alt="img" />
         <div class="card-body d-flex flex-column justify-content-between">
           <div>
             <h5 class="card-title card-heading">${newsData.title ? newsData.title : "No Title Found"}</h5>

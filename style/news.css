@@ -40,7 +40,7 @@ font-family: 'Staatliches', cursive; */
     padding: 5px 0;
 }
 .found-msg-div h5{
-    padding: 5px 0px 5px 30px;
+    padding: 5px 0px 5px 20px;
     font-family: 'Advent Pro', sans-serif;
     font-weight: 900;
     font-size: 1.5rem;
@@ -121,6 +121,13 @@ font-family: 'Staatliches', cursive; */
 }
 .modal-top button{
     background-color: #1BA098;
+}
+.footer-div{
+    background-color: #1BA098;
+    padding: 5px 0;
+}
+.footer-div h5{
+    font-family: 'Khand', sans-serif;
 }
 
 /* Loadin Spinner CSS Start */
