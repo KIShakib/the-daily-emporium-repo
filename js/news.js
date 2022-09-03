@@ -1,5 +1,6 @@
 /* Load All Categories API */
 const loadAllCatories = async () =>{
+    toggleSpinner(true);
     const url = `https://openapi.programming-hero.com/api/news/categories`;
 
     try{
@@ -10,6 +11,7 @@ const loadAllCatories = async () =>{
     catch(error){
         console.log(error);
     }
+    // toggleSpinner(false);
 }
 
 
@@ -18,6 +20,8 @@ const displayCategory = categories =>{
     // console.log(categories);
     const categoriesUl = document.getElementById('categories-ul');
 
+    
+
     categories.forEach(category =>{
         // console.log(category);
         const categoryLi = document.createElement('li');
@@ -25,13 +29,14 @@ const displayCategory = categories =>{
         categoryLi.innerHTML = `<button onclick="categoryNewsShow('${category.category_id}', '${category.category_name}')" type="button" class="btn category-btn">${category.category_name}</button>
         `;
         categoriesUl.appendChild(categoryLi);
-    })
+      })
 }
 
 
 /* Show Categor Wise News */
 const categoryNewsShow = async (categoryId, categoryName) =>{
     // console.log(categoryId);
+    toggleSpinner(true);
     const url = `https://openapi.programming-hero.com/api/news/category/${categoryId}`;
     try{
         const res = await fetch(url);
@@ -110,7 +115,8 @@ const displayNews = (categoriesNewsData, categoryName) =>{
       </div>
         `;
         cardMainContainer.appendChild(newsCardContainer);
-    })    
+      })    
+      toggleSpinner(false);
 }
 
 
@@ -171,6 +177,19 @@ const displayModal = modalDetails =>{
   modalMainDiv.appendChild(modalContentCard);
 }
 
+
+
+
+/* Spinner */
+const toggleSpinner = isLoading => {
+  const spinnerContainer = document.getElementById('spinner-div');
+  if(isLoading){
+      spinnerContainer.classList.remove('d-none');
+  }
+  else{
+      spinnerContainer.classList.add('d-none');
+  }
+}
 
 
 
