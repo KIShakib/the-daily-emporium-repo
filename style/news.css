@@ -37,13 +37,13 @@ font-family: 'Staatliches', cursive; */
 }
 .found-msg-div{
     background-color: #f8f9fa;
-    padding: 10px 0;
+    padding: 5px 0;
 }
-.found-msg-div h3{
+.found-msg-div h5{
     padding: 5px 0px 5px 30px;
     font-family: 'Advent Pro', sans-serif;
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 1px;
     color: #1BA098;
 }
@@ -95,4 +95,30 @@ font-family: 'Staatliches', cursive; */
     font-family: 'Khand', sans-serif;
     font-weight: 600;
     padding: 3px 10px 0 10px;
+}
+.author-img{
+    width: 15%;
+}
+.modal-author-div h5{
+    color: #1BA098;
+    font-weight: 500;
+    font-family: 'Staatliches', cursive;
+}
+#exampleModalLabel{
+    color: #1BA098;
+    font-weight: 400;
+    font-size: 1.5em;
+    font-family: 'Staatliches', cursive;
+}
+.modal-btn button{
+    background-color: #1BA098;
+    border: none;
+    border-radius: 3px;
+    color: #f8f9fa;
+    letter-spacing: 1px;
+    font-family: 'Khand', sans-serif;
+    font-weight: 600;
+}
+.modal-top button{
+    background-color: #1BA098;
 }
