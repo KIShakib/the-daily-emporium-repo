@@ -19,3 +19,13 @@
 .navbar-hr{
     border-top: 5px solid black;
 }
+.question-sec button{
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 900;
+    font-size: 1em;
+    color: #1BA098;
+}
+.question-sec p{
+    font-family: 'Khand', sans-serif;
+    color: #1BA098;
+}
